@@ -55,6 +55,7 @@ h3 {
   cursor: pointer;
   margin-top: 1em;
   border: 2px solid black;
+  border-radius: 0.4em;
 }
 .text-center {
   text-align: center;
