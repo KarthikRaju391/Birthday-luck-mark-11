@@ -7,12 +7,15 @@ function checkTheLuck() {
    const dob = dateOfBirth.value;
    const finalVal = calculateSum(dob);
    const luckyNumber = luckyNum.value;
-   compareVals(finalVal, luckyNumber);
+   if(dob && luckyNumber){
+      compareVals(finalVal, luckyNumber);
+   } else{
+      output.innerText = 'Please enter both inputs!'
+   }
 }
 
 
 function compareVals(dob, luckyNum){
-
    if(dob%luckyNum === 0){
       output.innerText = 'You are lucky!';
    }
